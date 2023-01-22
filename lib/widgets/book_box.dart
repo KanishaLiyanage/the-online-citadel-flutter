@@ -3,15 +3,9 @@ import 'package:flutter/material.dart';
 import '../theme/colors.dart';
 
 class BookBox extends StatelessWidget {
-  const BookBox({
-    Key? key,
-    required this.size,
-  }) : super(key: key);
-
-  final Size size;
-
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
     return Container(
         margin: EdgeInsets.symmetric(horizontal: 0.08 * size.width),
         padding: EdgeInsets.all(0.01 * size.width),

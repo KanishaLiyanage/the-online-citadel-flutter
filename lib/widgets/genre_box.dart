@@ -3,28 +3,19 @@ import 'package:flutter/material.dart';
 import '../theme/colors.dart';
 
 class GenreBox extends StatelessWidget {
-  const GenreBox({
-    Key? key,
-    required this.boxWidth,
-    required this.boxHeight,
-    required this.size,
-  }) : super(key: key);
-
-  final double boxWidth;
-  final double boxHeight;
-  final Size size;
-
   @override
   Widget build(BuildContext context) {
+    Size size = MediaQuery.of(context).size;
+    var boxWidth = 0.8 * size.width;
+    var boxHeight = 0.35 * size.height;
     return Container(
       width: boxWidth,
       height: boxHeight,
       padding: EdgeInsets.all(
         0.015 * size.width,
       ),
-      margin: EdgeInsets.only(
-        bottom: 5,
-        top: 5,
+      margin: EdgeInsets.symmetric(
+        horizontal: 0.025 * size.width,
       ),
       decoration: BoxDecoration(
         color: Colors.white,
