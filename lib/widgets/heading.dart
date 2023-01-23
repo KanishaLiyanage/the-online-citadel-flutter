@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../screens/all_genres.dart';
 
 class Heading extends StatelessWidget {
   final String heading;
