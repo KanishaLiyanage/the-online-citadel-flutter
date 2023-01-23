@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import '../screens/all_genres.dart';
 
 class Heading extends StatelessWidget {
-  const Heading({required this.heading});
-
   final String heading;
+  final String route;
+
+  Heading({
+    required this.heading,
+    required this.route,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -13,12 +18,29 @@ class Heading extends StatelessWidget {
       width: double.infinity,
       margin: EdgeInsets.symmetric(horizontal: 0.08 * size.width),
       padding: EdgeInsets.only(top: 0.04 * size.width),
-      child: Text(
-        heading,
-        style: TextStyle(
-          fontSize: 20,
-          fontWeight: FontWeight.w500,
-        ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            heading,
+            style: TextStyle(
+              fontSize: 20,
+              fontWeight: FontWeight.w500,
+            ),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pushNamed(route);
+            },
+            child: Text(
+              "See all",
+              style: TextStyle(
+                fontSize: 15,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }

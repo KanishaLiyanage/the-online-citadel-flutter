@@ -6,6 +6,7 @@ import '../widgets/book_box.dart';
 import '../widgets/custom_app_bar.dart';
 import '../widgets/genre_box.dart';
 import '../widgets/heading.dart';
+import '../widgets/main_heading.dart';
 
 class HomeScreen extends StatelessWidget {
   Dio dio = Dio();
@@ -33,20 +34,8 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Container(
-              height: 0.1 * size.height,
-              width: double.infinity,
-              margin: EdgeInsets.symmetric(horizontal: 0.08 * size.width),
-              padding: EdgeInsets.only(top: 0.04 * size.width),
-              child: Text(
-                "Hi, Good morning!",
-                style: TextStyle(
-                  fontSize: 30,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-            Heading(heading: "Genres of Books"),
+            MainHeading(),
+            Heading(heading: "Genres of Books", route: '/allGenres'),
             Container(
               height: 0.4 * size.height,
               child: ListView(
@@ -60,7 +49,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 0.015 * size.height),
-            Heading(heading: "All Books"),
+            Heading(heading: "All Books", route: '/allBooks'),
             Container(
               height: 0.25 * size.height,
               child: ListView(
@@ -72,6 +61,7 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(height: 0.015 * size.height),
           ],
         ),
       ),
