@@ -1,36 +1,34 @@
 import 'package:flutter/material.dart';
 import '../theme/colors.dart';
 
-class CustomAppBar extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Container(
-          height: 0.1 * size.height,
-          width: 0.1 * size.height,
-          margin: EdgeInsets.symmetric(horizontal: 0.08 * size.width),
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('assets/images/logo.png'),
-            ),
-          ),
+AppBar CustomAppbar(Size size) {
+  return AppBar(
+    toolbarHeight: 0.1 * size.height,
+    backgroundColor: Colors.transparent,
+    elevation: 0,
+    leadingWidth: 0.28 * size.width,
+    leading: Container(
+      margin: EdgeInsets.only(left: 0.08 * size.width),
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage('assets/images/logo.png'),
         ),
-        Container(
-          height: 0.1 * size.height,
-          width: 0.1 * size.height,
-          margin: EdgeInsets.symmetric(horizontal: 0.08 * size.width),
-          child: IconButton(
-            icon: Icon(
-              Icons.person,
-              size: 35,
-            ),
-            onPressed: () {},
+      ),
+    ),
+    actions: [
+      Container(
+        height: 0.1 * size.height,
+        width: 0.1 * size.height,
+        margin: EdgeInsets.only(right: 0.08 * size.width),
+        child: IconButton(
+          icon: Icon(
+            Icons.account_circle_rounded,
+            size: 35,
+            color: Colors.black,
           ),
+          onPressed: () {},
         ),
-      ],
-    );
-  }
+      ),
+    ],
+  );
 }

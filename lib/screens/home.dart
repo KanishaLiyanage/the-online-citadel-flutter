@@ -29,11 +29,10 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
+      appBar: CustomAppbar(size),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: 0.08 * size.height),
-            CustomAppBar(),
             Container(
               height: 0.1 * size.height,
               width: double.infinity,
