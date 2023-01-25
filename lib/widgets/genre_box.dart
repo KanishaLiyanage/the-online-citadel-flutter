@@ -12,10 +12,10 @@ class GenreBox extends StatelessWidget {
       width: boxWidth,
       height: boxHeight,
       padding: EdgeInsets.all(
-        0.015 * size.width,
+        0.01 * size.width,
       ),
-      margin: EdgeInsets.symmetric(
-        horizontal: 0.025 * size.width,
+      margin: EdgeInsets.all(
+        0.025 * size.width,
       ),
       decoration: BoxDecoration(
         color: Colors.white,

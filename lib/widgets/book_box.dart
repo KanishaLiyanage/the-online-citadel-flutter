@@ -7,7 +7,12 @@ class BookBox extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
-        margin: EdgeInsets.symmetric(horizontal: 0.08 * size.width),
+        margin: EdgeInsets.fromLTRB(
+          0.08 * size.width,
+          0.025 * size.width,
+          0.08 * size.width,
+          0.025 * size.width,
+        ),
         padding: EdgeInsets.all(0.01 * size.width),
         width: double.infinity,
         decoration: BoxDecoration(

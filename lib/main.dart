@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import './screens/landing.dart';
 import './screens/all_books.dart';
 import './screens/home.dart';
 import './screens/all_genres.dart';
@@ -19,8 +20,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomeScreen(),
+      home: LandingScreen(),
       routes: {
+        '/home': (context) => HomeScreen(),
         '/allGenres': (context) => AllGenres(),
         '/allBooks': (context) => AllBooks(),
       },

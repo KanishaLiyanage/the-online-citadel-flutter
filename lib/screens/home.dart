@@ -48,10 +48,9 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 0.015 * size.height),
             Heading(heading: "All Books", route: '/allBooks'),
             Container(
-              height: 0.25 * size.height,
+              height: 0.435 * size.height,
               child: ListView(
                 padding: EdgeInsets.all(10),
                 children: [
