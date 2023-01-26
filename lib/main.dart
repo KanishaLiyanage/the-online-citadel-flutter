@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../screens/profile.dart';
 import './screens/landing.dart';
 import './screens/all_books.dart';
 import './screens/home.dart';
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
         '/home': (context) => HomeScreen(),
         '/allGenres': (context) => AllGenres(),
         '/allBooks': (context) => AllBooks(),
+        '/profile': (context) => ProfileScreen(),
       },
     );
   }

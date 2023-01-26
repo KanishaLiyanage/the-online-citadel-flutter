@@ -1,7 +1,9 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import '../theme/colors.dart';
 
-AppBar CustomAppbar(Size size) {
+AppBar CustomAppbar(Size size, BuildContext context) {
   return AppBar(
     toolbarHeight: 0.1 * size.height,
     backgroundColor: Colors.transparent,
@@ -26,7 +28,9 @@ AppBar CustomAppbar(Size size) {
             size: 35,
             color: Colors.black,
           ),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.of(context).pushNamed('/profile');
+          },
         ),
       ),
     ],
