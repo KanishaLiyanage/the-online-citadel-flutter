@@ -1,7 +1,4 @@
-import 'dart:js';
-
 import 'package:flutter/material.dart';
-import '../theme/colors.dart';
 
 AppBar CustomAppbar(Size size, BuildContext context) {
   return AppBar(
