@@ -6,7 +6,7 @@ AppBar PageAppBar(pageTitle, BuildContext context) {
     toolbarHeight: 0.1 * size.height,
     backgroundColor: Colors.transparent,
     elevation: 0,
-    leadingWidth: 0.28 * size.width,
+    leadingWidth: 0.225 * size.width,
     leading: IconButton(
       icon: Icon(
         Icons.arrow_back_ios_rounded,
