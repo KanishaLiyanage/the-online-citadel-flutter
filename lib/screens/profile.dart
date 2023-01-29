@@ -9,6 +9,9 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PageAppBar("Username Here", context),
+      body: Column(
+        children: [],
+      ),
     );
   }
 }
