@@ -26,6 +26,8 @@ const red = Color(0xFFf77080);
 const orange = Color(0xFFf5ba92);
 const sky = Color(0xFFABDEE6);
 const blue = Color(0xFF509BE4);
+const darkBlue = Color(0xFF102341);
+const creamYellow = Color(0xFFfdd983);
 
 const listColors = [
   green,

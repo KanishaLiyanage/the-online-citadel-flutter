@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../screens/read_book.dart';
 import './screens/book_details.dart';
 import '../screens/profile.dart';
 import './screens/landing.dart';
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
         '/allBooks': (context) => AllBooks(),
         '/profile': (context) => ProfileScreen(),
         '/bookDetails': (context) => BookDetails(),
+        '/readBook': (context) => ReadBookScreen(),
       },
     );
   }

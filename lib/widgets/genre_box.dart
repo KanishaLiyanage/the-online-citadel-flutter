@@ -91,7 +91,7 @@ class GenreBox extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Harry Pottor",
+                      "Harry Potter",
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(
