@@ -1,6 +1,6 @@
-# the_online_citadel
+# The Online Citadel
 
-A new Flutter project.
+Online book store application.
 
 ## Getting Started
 
