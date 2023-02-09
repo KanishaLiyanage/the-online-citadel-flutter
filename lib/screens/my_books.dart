@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+
+import '../widgets/custom_app_bar.dart';
 
 class MyBooksScreen extends StatelessWidget {
   const MyBooksScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    Size size = MediaQuery.of(context).size;
+    return Scaffold(appBar: CustomAppbar(size, context));
   }
 }
