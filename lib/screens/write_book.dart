@@ -10,6 +10,9 @@ class WriteBook extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: CustomAppbar(size, context),
+      body: Column(
+        children: [],
+      ),
     );
   }
 }
